@@ -11,7 +11,8 @@ namespace ADAL_Daemon
     {
         static void Main(string[] args)
         {
-            string graphToken = AuthUtils.GetTokenInAppService("https://graph.microsoft.com");
+            // I know using .Result makes me a terrible person, and for this I apologize
+            string graphToken = AuthUtils.GetTokenInAppService("https://graph.microsoft.com").Result;
         }
     }
 }
