@@ -13,7 +13,7 @@ namespace ADAL_API.Controllers
     {
         public async Task<string> Get()
         {
-            return await AuthUtils.GetTokenInAppService("graph.microsoft.com");
+            return await AuthUtils.GetTokenInAppService("https://graph.microsoft.com");
         }
     }
 }

@@ -14,7 +14,7 @@ namespace ADAL_API.Controllers
     {
         public async Task<string> Get()
         {
-            return await AuthUtils.GetTokenInAppService("graph.microsoft.com", this.Request);
+            return await AuthUtils.GetTokenInAppService("https://graph.microsoft.com", this.Request);
         }
     }
 }
